@@ -1,0 +1,24 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:wght@300&family=Carter+One&family=Just+Another+Hand&family=Nothing+You+Could+Do&display=swap');
+
+.albert-sans{
+  font-family: 'Albert Sans', sans-serif;
+}
+.nothing-you-could-do{
+  font-family: 'Nothing You Could Do', cursive;
+}
+
+@layer components{
+  
+  .skills{
+    @apply container flex flex-row justify-center items-center w-36 min-w-fit h-12 text-center rounded-lg 
+    sm:bg-slate-500 text-sm md:text-base font-bold
+  }
+  .iconSkills{
+    @apply text-xl md:text-2xl mr-2
+  }
+
+}
